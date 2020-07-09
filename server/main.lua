@@ -43,28 +43,28 @@ end
 
 -- Version Checking - DON'T TOUCH THIS
 
-local CurrentVersion = '1.0.0'
+local CurrentVersion = '1.0.1'
 local GithubResourceName = 'Support-Chat'
 
 PerformHttpRequest('https://raw.githubusercontent.com/Jougito/FiveM_Resources/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
     PerformHttpRequest('https://raw.githubusercontent.com/Jougito/FiveM_Resources/master/' .. GithubResourceName .. '/CHANGELOG', function(Error, Changes, Header)
-        print('\n')
-        print('[Support Chat] Checking for updates...')
-        print('')
-        print('[Support Chat] Current version: ' .. CurrentVersion)
-        print('[Support Chat] Updater version: ' .. NewestVersion)
-        print('')
+        print('^0')
+        print('^6[Support Chat]^0 Checking for updates...')
+        print('^0')
+        print('^6[Support Chat]^0 Current version: ^5' .. CurrentVersion .. '^0')
+        print('^6[Support Chat]^0 Updater version: ^5' .. NewestVersion .. '^0')
+        print('^0')
         if CurrentVersion ~= NewestVersion then
-            print('[Support Chat] Your script is outdated!')
-            print('')
-            print('[Support Chat] CHANGELOG ' .. NewestVersion .. ':')
-            print('')
+            print('^6[Support Chat]^0 Your script is ^8outdated^0!')
+            print('^0')
+            print('^6[Support Chat] ^3CHANGELOG ^5' .. NewestVersion .. ':^0')
+            print('^3')
             print(Changes)
-            print('')
-            print('[Support Chat] You are not running the newest stable version of Staff Chat. Please update: https://github.com/Jougito/Support-Chat')
+            print('^0')
+            print('^6[Support Chat]^0 You ^8are not^0 running the newest stable version of ^5Support Chat^0. Please update: https://github.com/Jougito/Support-Chat')
         else
-            print('[Support Chat] Your script is up-to-update')
+            print('^6[Support Chat]^0 Your script is ^2up-to-update^0')
         end
-        print('\n')
+        print('^0')
     end)
 end)
