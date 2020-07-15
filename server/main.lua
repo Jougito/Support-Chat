@@ -63,7 +63,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/Jougito/FiveM_Resources/ma
             print('^0')
             print('^6[Support Chat]^0 You ^8are not^0 running the newest stable version of ^5Support Chat^0. Please update: https://github.com/Jougito/Support-Chat')
         else
-            print('^6[Support Chat]^0 Your script is ^2up-to-update^0')
+            print('^6[Support Chat]^0 Your script is ^2up to update^0')
         end
         print('^0')
     end)
